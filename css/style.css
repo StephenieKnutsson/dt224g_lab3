@@ -3,6 +3,8 @@
 body {
     background-image: linear-gradient(to right, #13602a, #0fa870); 
     color: rgb(249, 251, 249);
+    margin: 50px;
+    padding: 20px;
 }
 
 header {
@@ -14,3 +16,9 @@ header {
     color: rgb(249, 251, 249);
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 15px;
+}
