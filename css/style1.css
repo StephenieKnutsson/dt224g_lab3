@@ -9,51 +9,88 @@
 /* FÖR MOBIL */
 
 * {
-        display: block;
-    }
+    display: block;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(13, 80, 37);
+    color:rgb(255, 255, 255);
+}
 
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    display: flex;
+    border: 2px solid black;
+    border-width: 10px;
+    border-style: solid;
+    gap: 1rem;
+    padding: 1rem;
+    height: 100%;
+    grid-template-areas:
+    "header"
+    "section1"
+    "section2"
+    "section3"
+    "section4"
+    "foot";
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 
 
 
 /* FÖR DATORSKÄRM */
-
+/*
 @media (min-width:768px) {
     * {
         display: grid;
+        gap: 1%;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
     nav ul {
-        flex-direction: row; 
+    
     }
 
-
     header {
-        grid-column: 1/4
+        grid-column: 1/4;
+    }
+
+    .logo {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 2;
     }
 
     .section2 {
-        grid-column: 1/4
+        grid-column: 1/4;
     }
 
     .legend1 {
-        grid-column: 1/2
+        grid-column: 1/2;
     }
     .legend2 {
-        grid-column: 2/3
+        grid-column: 2/3;
     }
     .legend3 {
-        grid-column: 3/4
+        grid-column: 3/4;
     }
 
-    
     .section4 {
-        grid-column: 1/4
+        grid-column: 1/4;
     }
-
 
     footer {
-        grid-column: 1/4
+        grid-column: 1/4;
     }
 }
+*/
